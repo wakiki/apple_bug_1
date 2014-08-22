@@ -20,6 +20,9 @@
                                    CGRectGetMidY(self.frame));
     
     [self addChild:myLabel];
+    
+    SKSpriteNode *spaceship = (SKSpriteNode *)[self childNodeWithName:@"spaceship"];
+    [spaceship runAction:[SKAction scaleTo:2 duration:1.5]];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
